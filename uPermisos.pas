@@ -24,6 +24,7 @@ type
     qUpdateOportunidades: TMSQuery;
     qGetUserIdNombreCompleto: TStringField;
     qGetOportunidadesNombre: TWideStringField;
+    qGetOportunidadesColorAbierto: TStringField;
   private
     { Private declarations }
   public

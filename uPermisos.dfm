@@ -91,6 +91,12 @@ object DM: TDM
       FixedChar = True
       Size = 2
     end
+    object qGetOportunidadesColorAbierto: TStringField
+      FieldName = 'ColorAbierto'
+      Visible = False
+      FixedChar = True
+      Size = 2
+    end
   end
   object DSGetOportunidades: TMSDataSource
     DataSet = qGetOportunidades

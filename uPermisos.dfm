@@ -39,8 +39,9 @@ object DM: TDM
     Connection = SQLConnect
     SQL.Strings = (
       
-        'Select * From Oportunidades where Usuario = :usuario ORDER BY Ca' +
-        'ducidad DESC;')
+        'Select Op.*, Ac.*  from Oportunidades Op, ArtColores Ac where  O' +
+        'p.Usuario = :usuario and Ac.Codigo = Op.ColorAbierto ORDER BY Op' +
+        '.Caducidad DESC;')
     Left = 88
     Top = 56
     ParamData = <
@@ -72,11 +73,11 @@ object DM: TDM
       FixedChar = True
       Size = 2
     end
-    object qGetOportunidadesColorAbierto: TStringField
+    object qGetOportunidadesNombre: TWideStringField
       DisplayLabel = 'Color'
-      FieldName = 'ColorAbierto'
-      FixedChar = True
-      Size = 2
+      FieldName = 'Nombre'
+      ReadOnly = True
+      Size = 50
     end
     object qGetOportunidadesCubrecantoAbierto: TStringField
       DisplayLabel = 'Cubrecanto'

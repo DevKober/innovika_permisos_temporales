@@ -16,7 +16,6 @@ type
     qGetOportunidadesCaducidad: TDateTimeField;
     qGetOportunidadesLineaAbierta: TWideStringField;
     qGetOportunidadesBaseAbierta: TStringField;
-    qGetOportunidadesColorAbierto: TStringField;
     qGetOportunidadesCubrecantoAbierto: TStringField;
     qGetOportunidadesJaladeraAbierta: TStringField;
     DSGetOportunidades: TMSDataSource;
@@ -24,6 +23,7 @@ type
     DSGetArt_x_: TMSDataSource;
     qUpdateOportunidades: TMSQuery;
     qGetUserIdNombreCompleto: TStringField;
+    qGetOportunidadesNombre: TWideStringField;
   private
     { Private declarations }
   public

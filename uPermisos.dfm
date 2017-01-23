@@ -39,9 +39,9 @@ object DM: TDM
     Connection = SQLConnect
     SQL.Strings = (
       
-        'Select Op.*, Ac.*  from Oportunidades Op, ArtColores Ac where  O' +
-        'p.Usuario = :usuario and Ac.Codigo = Op.ColorAbierto ORDER BY Op' +
-        '.Caducidad DESC;')
+        'Select Op.*, Ac.Nombre from Oportunidades Op LEFT JOIN ArtColore' +
+        's Ac ON Op.ColorAbierto = Ac.Codigo Where Op.Usuario = :usuario ' +
+        'ORDER BY Op.Caducidad DESC;')
     Left = 88
     Top = 56
     ParamData = <
